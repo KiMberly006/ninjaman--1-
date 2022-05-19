@@ -114,8 +114,14 @@
         if(e.keyCode == 40){
             if(world[ninjaman.y + 1] [ninjaman.x] != 1){
             ninjaman.y++;
+            }
         }
-    }
+        if(e.keyCode == 38){
+            if(world[ninjaman.y - 1] [ninjaman.x] != 1){
+            ninjaman.y--;
+            }
+        }
+
     // add going down functionality
     world[ninjaman.y] [ninjaman.x] =0;
     drawNinjaman()
@@ -126,7 +132,6 @@
     // sushi = 10pts onigiri = 5pts
 
     // advanced challenges - random world
-
 
     // hacker challenges - create ghosts that chase ninjaman
 </script>
